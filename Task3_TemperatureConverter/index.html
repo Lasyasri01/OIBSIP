@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="bg-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <main class="container">
+    <div class="card">
+
+      <div class="card-header">
+        <span class="icon">🌡️</span>
+        <h1>Temperature Converter</h1>
+        <p>Instantly convert between Celsius, Fahrenheit & Kelvin</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="input-group">
+        <label for="tempInput">Enter Temperature</label>
+        <div class="input-wrap">
+          <input type="number" id="tempInput" placeholder="e.g. 100" />
+          <span class="input-icon">🔢</span>
+        </div>
+        <span class="error-msg" id="errorMsg">⚠️ Please enter a valid number!</span>
+      </div>
+
+      <div class="unit-group">
+        <label>Convert From</label>
+        <div class="radio-buttons">
+          <label class="radio-card">
+            <input type="radio" name="unit" value="celsius" checked />
+            <span><span class="unit-symbol">°C</span>Celsius</span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="unit" value="fahrenheit" />
+            <span><span class="unit-symbol">°F</span>Fahrenheit</span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="unit" value="kelvin" />
+            <span><span class="unit-symbol">K</span>Kelvin</span>
+          </label>
+        </div>
+      </div>
+
+      <button class="convert-btn" onclick="convert()">⚡ Convert Now</button>
+
+      <p class="results-label">Results</p>
+      <div class="results" id="results">
+        <div class="result-card" id="celsiusResult">
+          <span class="result-unit">°C</span>
+          <span class="result-label">Celsius</span>
+          <span class="result-value" id="celsiusVal">—</span>
+        </div>
+        <div class="result-card" id="fahrenheitResult">
+          <span class="result-unit">°F</span>
+          <span class="result-label">Fahrenheit</span>
+          <span class="result-value" id="fahrenheitVal">—</span>
+        </div>
+        <div class="result-card" id="kelvinResult">
+          <span class="result-unit">K</span>
+          <span class="result-label">Kelvin</span>
+          <span class="result-value" id="kelvinVal">—</span>
+        </div>
+      </div>
+
+      <button class="reset-btn" onclick="reset()">↺ Reset</button>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
