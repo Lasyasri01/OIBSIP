@@ -1,0 +1,107 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#f5f6fa;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+background:#111;
+padding:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+nav a:hover
+
+/* HERO SECTION */
+
+header{
+height:80vh;
+background:linear-gradient(to right,#0072ff,#00c6ff);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 30px;
+border:none;
+background:white;
+color:#0072ff;
+font-size:16px;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#111;
+color:white;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:70px 40px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:260px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card h3{
+color:#0072ff;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
